@@ -1,9 +1,11 @@
-const prompt = require('prompt');
-prompt.start();
-
-
-prompt.get('input', function (err, result) {
+function fibonacci(n) {
+  let a = 0, b = 1, c = n;
+  for(let i = 2; i <= n; i++) {
+  c = a + b;
+  a = b;
+  b = c;
+  }
+  console.log(c) ;
+  }
   
-    // Write code here
-  
-});
+  fibonacci(6)
