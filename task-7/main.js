@@ -1,9 +1,8 @@
-const prompt = require('prompt');
-prompt.start();
-
-
-prompt.get('input', function (err, result) {
-  
-    // Write code here
-  
-});
+function kv(n){
+    for(i=1; i<n; i++){
+        if(i**2<n){
+            console.log(i**2)
+        }
+    }
+}
+kv(20)
